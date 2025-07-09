@@ -1,0 +1,11 @@
+Model Information:
+* title:	Commodore Amiga 500 || Computer
+* source:	https://sketchfab.com/3d-models/commodore-amiga-500-computer-9c21f636edd44371ac81ce1c3ff6c987
+* author:	dark_igorek (https://sketchfab.com/dark_igorek)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Commodore Amiga 500 || Computer" (https://sketchfab.com/3d-models/commodore-amiga-500-computer-9c21f636edd44371ac81ce1c3ff6c987) by dark_igorek (https://sketchfab.com/dark_igorek) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

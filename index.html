@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Home - Profiel - Joel van Houten</title>
+
+        <link rel="icon" type="image/png" href="favicon-128x128.png"/>
+        <link rel="stylesheet" href="style/style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kreon:wght@300..700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav id="navbar"></nav>
+        <section id="hero">
+            <div class="hero-container-left">
+                <h1 class="hero-heading-tekst">Welkom!</h1>
+                <p class="hero-inleiding">
+                    Leuk dat je er bent! Op deze pagina ontdek je meer over mij, mijn interesse in frontend design en de weg die ik bewandel om een ontwikkelaar te worden. Kijk gerust rond!
+                </p>
+                <a href="../pages/projecten.html" class="hero-button">Ontdek meer</a>
+            </div>
+            <div class="hero-container-right">
+                <img src="images/hero.png" alt="Hero Image" class="hero-img">
+            </div>    
+        </section>
+        <section id="kennis">
+            <div class="kennis-container">  
+                <div class="kennis-heading-tekst">Kennis</div>
+                    <p class="kennis-inleiding">
+                        Op dit moment ben ik bezig met het volgen van een leertraject bij Hacklab. Hier ga ik mij verdiepen in de volgende essentiële aspecten van frontend design en ontwikkeling. Klik op de button om een korte uitleg te krijgen van elk onderdeel waar ik de komende tijd mee aan de slag ga.
+                    </p>
+                    <div class="kennis-buttons-container">
+                        <div class="kennis-button" onclick="kennisUitleg('HTML')">
+                            <h2 class="kennis-button-heading">HTML</h2>
+                            <p class="kennis-button-tekst">Structuur webpagina</p>
+                        </div>
+                        <div class="kennis-button" onclick="kennisUitleg('CSS')">
+                            <h2 class="kennis-button-heading">CSS</h2>
+                            <p class="kennis-button-tekst">Visuele opmaak</p>
+                        </div>
+                        <div class="kennis-button" onclick="kennisUitleg('JavaScript')">
+                            <h2 class="kennis-button-heading">JavaScript</h2>
+                            <p class="kennis-button-tekst">Interactieve functionaliteit</p>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <section id="kennis-uitleg">
+            <div id="kennis-uitleg-container">
+                <h2>HTML – Structuur en inhoud</h2>
+                <br>
+                <p>
+                    HTML (HyperText Markup Language) is de fundamentele bouwsteen van elke webpagina. 
+                    Het zorgt ervoor dat browsers begrijpen welke elementen waar op een pagina moeten staan, 
+                    zoals titels, paragrafen, afbeeldingen en links.
+                </p>
+                <p>
+                    HTML beschrijft de inhoud en de structuur, maar niet hoe iets eruitziet of zich gedraagt. 
+                    Het is een opmaaktaal die gebruikmaakt van ‘tags’ om verschillende soorten inhoud te onderscheiden. 
+                    Deze tags geven betekenis aan de inhoud, waardoor zoekmachines en schermlezers de pagina beter kunnen interpreteren.
+                </p>
+                <p>
+                    Zonder HTML zou er simpelweg geen inhoud zijn om te tonen, want het vormt het skelet van een website. 
+                    Het is daarmee onmisbaar voor het creëren van webpagina’s die toegankelijk en begrijpelijk zijn 
+                    voor gebruikers en machines.
+                </p>
+            </div>
+        </section>
+        <footer id="footer"></footer>
+        <script src="js/laad-layout.js"></script> 
+        <script src="js/laad-kennis.js"></script>    
+    </body>
+</html>

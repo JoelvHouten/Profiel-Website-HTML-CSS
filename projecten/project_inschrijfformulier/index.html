@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inschrijfformulier</title>
+
+    <link rel="icon" type="image/png" href="favicon-512x512.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Kreon:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <form id="registrationForm" onsubmit="return validateForm()">
+        <h1>Inschrijfformulier</h1>
+
+        <fieldset>
+            <legend>Persoonlijke gegevens</legend>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <label for="FirstName">Voornaam</label>
+                    <input type="text" id="FirstName" class="form-control" name="FirstName" validate="required|min:2|max:10">
+                    <div for="FirstName" class="error"></div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="LastName">Achternaam</label>
+                    <input type="text" id="LastName" class="form-control" name="LastName" validate="required|min:2|max:10">
+                    <div for="LastName" class="error"></div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="UserName">Gebruikersnaam</label>
+                    <input type="text" id="UserName" class="form-control" name="UserName" validate="required|min:2|max:25|noSpaces">
+                    <div for="UserName" class="error"></div>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Adresgegevens</legend>
+            <div class="row">
+                <div class="col-md-8 mb-3">
+                    <label for="StreetName">Straatnaam</label>
+                    <input type="text" id="StreetName" class="form-control" name="StreetName" validate="required|min:1|max:50">
+                    <div for="StreetName" class="error"></div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="HouseNumber">Huisnummer</label>
+                    <input type="text" id="HouseNumber" class="form-control" name="HouseNumber" validate="required|min:1|max:10|numeric">
+                    <div for="HouseNumber" class="error"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <label for="PostalCode">Postcode</label>
+                    <input type="text" id="PostalCode" class="form-control" name="PostalCode" validate="required|min:4|max:10|postcode">
+                    <div for="PostalCode" class="error"></div>
+                </div>
+                <div class="col-md-8 mb-3">
+                    <label for="Residence">Woonplaats</label>
+                    <input type="text" id="Residence" class="form-control" name="Residence" validate="required|min:2|max:50">
+                    <div for="Residence" class="error"></div>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contactgegevens</legend>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="Email">E-mailadres</label>
+                    <input type="email" id="Email" class="form-control" name="Email" validate="required|email">
+                    <div for="Email" class="error"></div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="Telephone">Telefoonnummer</label>
+                    <input type="text" id="Telephone" class="form-control" name="Telephone" validate="required|min:2|max:20">
+                    <div for="Telephone" class="error"></div>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Beveiliging</legend>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="Password">Wachtwoord</label>
+                    <input type="password" id="Password" class="form-control" name="Password" validate="required|min:6|max:20">
+                    <div for="Password" class="error"></div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="RepeatPassword">Herhaal wachtwoord</label>
+                    <input type="password" id="RepeatPassword" class="form-control" name="RepeatPassword" validate="required|match:Password">
+                    <div for="RepeatPassword" class="error"></div>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Geboortegegevens</legend>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="birthday" class="form-label">Geboortedatum</label>
+                    <input type="date" id="birthday" name="birthday" class="form-control">
+                    <div for="birthday" class="error"></div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="birthtime" class="form-label">Geboortetijd</label>
+                    <input type="time" id="birthtime" name="birthtime" class="form-control">
+                    <div for="birthtime" class="error"></div>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset class="mb-3">
+            <legend class="form-label">Geslacht</legend>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="genderMan" value="man" validate="required">
+                <label class="form-check-label" for="genderMan">Man</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="genderVrouw" value="vrouw">
+                <label class="form-check-label" for="genderVrouw">Vrouw</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="genderAnders" value="anders">
+                <label class="form-check-label" for="genderAnders">Anders</label>
+            </div>
+            <div for="gender" class="error"></div>
+        </fieldset>
+
+        <fieldset class="mb-3">
+            <legend class="form-label">Opleidingsniveau</legend>
+            <div class="row">
+                <div class="col-md-6">
+                    <select class="form-select" id="educationLevel" name="educationLevel" validate="required">
+                        <option value="" disabled selected>--- Kies een optie ---</option>
+                        <option value="vmbo">VMBO</option>
+                        <option value="mbo">MBO</option>
+                        <option value="havo">HAVO</option>
+                        <option value="vwo">VWO</option>
+                        <option value="hbo">HBO</option>
+                        <option value="universiteit">Universiteit</option>
+                    </select>
+                </div>
+                <div for="educationLevel" class="error"></div>
+            </div>
+        </fieldset>
+
+        <fieldset class="mb-3">
+            <legend class="form-label">Interesses</legend>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="interesseProgrammeren" name="interesses[]" value="Programmeren" validate="required">
+                <label class="form-check-label" for="interesseProgrammeren">Programmeren</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="interesseDesign" name="interesses[]" value="Design">
+                <label class="form-check-label" for="interesseDesign">Design</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="interesseWetenschap" name="interesses[]" value="Wetenschap">
+                <label class="form-check-label" for="interesseWetenschap">Wetenschap</label>
+            </div>
+            <div for="Interesses" class="error"></div>
+        </fieldset>
+
+        <fieldset class="mb-3">
+            <label class="form-check-label" for="algemeneVoorwaarden">
+                <input class="form-check-input" type="checkbox" id="algemeneVoorwaarden" name="algemeneVoorwaarden" validate="required|Agreement">
+                Ik ga akkoord met de algemene voorwaarden
+            </label>
+            <div for="algemeneVoorwaarden" class="error"></div>
+        </fieldset>
+
+        <div class="d-flex justify-content-end gap-2">
+            <button type="reset" class="btn btn-secondary">Reset</button>
+            <button type="submit" class="btn btn-primary">Verzenden</button>
+        </div>
+    </form>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('registrationForm');
+    const inputs = document.querySelectorAll('[validate]');
+    
+    const foutmeldingen = {
+        UserName: {
+            required: "Gebruikersnaam is verplicht.",
+            min: "Gebruikersnaam moet minimaal 2 tekens bevatten.",
+            max: "Gebruikersnaam mag maximaal 30 tekens bevatten.",
+            noSpaces: "Gebruikersnaam mag geen spaties bevatten."
+        },
+
+        birthday: {
+            required: "Geboortedatum is verplicht.",
+            past: "Geboortedatum moet in het verleden liggen."
+        },
+        gender: {
+            required: "Kies een geslacht."
+        },
+        interesses: {
+            required: "Kies minimaal één interesse."
+        },
+
+        PostalCode: {
+            required: "Postcode is verplicht.",
+            min: "Postcode moet minimaal 4 tekens bevatten.",
+            max: "Postcode mag maximaal 10 tekens bevatten.",
+            postcode: "Ongeldige postcode. Gebruik formaat 1234AB of 1234 AB."
+        }
+    };
+});
+</script>
+
+</body>
+</html>

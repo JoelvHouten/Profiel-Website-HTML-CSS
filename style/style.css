@@ -1,0 +1,756 @@
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fffaf1;
+    color: #413c58;
+    font-family: inter,sans-serif;
+    font-size: 16px;
+}
+
+/* navbar styles */
+
+#navbar{
+    height: 5rem;
+    background-color: #e7d6bc;
+    display: flex;
+}
+
+.navbar-container{
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.navbar-logo{
+    block-size: 3rem;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.navbar-menu{
+    display: flex;
+    flex-basis: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.navbar-ul{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar-li{
+    list-style-type: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #413c58;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    will-change: transform;
+}
+
+.nav-link:hover{
+    transform: scale(1.1) translateZ(0);
+    color: #141414;
+}
+
+/* index styles */
+
+#hero{
+    padding-block: 6rem;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 9rem;
+}
+
+.hero-container-left{
+    flex: 0 0 auto;
+    width: 30%;
+    line-height: 2.1rem;
+}
+
+.hero-heading-tekst{
+    font-size: 64px;
+    font-family: serif;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.hero-inleiding{
+    font-size: 24px;
+    margin-block: 3rem;
+}
+
+.hero-button{
+    background-color: #f38b4a;
+    color: #fffaf1;
+    border-radius: .7rem;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    font-size: 24px;
+    box-sizing: border-box;
+    font-weight: 700;
+}
+
+.hero-button:hover{
+    background-color: #413c58;
+}
+
+.hero-container-right{
+    flex: 0 0 auto;
+    width: 33%;
+}
+
+.hero-img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+#kennis{
+    padding-block: 6rem;
+    background-color: #e7d6bc;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.kennis-container{
+    flex: 0 0 auto;
+    width: 60%;
+}
+
+.kennis-heading-tekst{
+    font-size: 64px;
+    font-family: serif;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.kennis-inleiding{
+    font-size: 24px;
+    margin-block: 3rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.kennis-buttons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.kennis-button{
+    background-color: #fffaf1;
+    position: relative;
+    padding: 2.5rem;
+    border-radius: 2rem;
+    height: 100%;
+    width: 30%;
+    transition: transform 0.3s;
+    cursor: pointer;
+    min-height: 170px;
+}
+
+.kennis-button:hover{
+    transform: scale(1.07);
+}
+
+.kennis-button-heading{
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+    color: #f38b4a;
+}
+
+.kennis-button-tekst{
+    font-size: 19px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#kennis-uitleg{
+    padding-block: 6rem;
+    background-color: #fffaf1;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#kennis-uitleg-container{
+    flex: 0 0 auto;
+    width: 60%;
+    font-size: 20px;
+    line-height: 1.7;
+    min-height: 330px;
+}
+
+/* footer styles */
+
+#footer{
+    padding-block: 2.25rem;
+    background-color: #413c58;
+    color: #fff;
+    padding-block: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-container{
+    flex: 0 0 auto;
+    width: 70%;
+    display: flex;
+}
+
+.footer-box-left{
+    font-size: 19px;
+    width: 50%;
+    text-align: right;
+    padding-right: 1.6rem;
+    line-height: 1.6;
+    border-right: 4px solid #f8a54e;
+}
+
+.footer-box-right{
+    width: 50%;
+    padding-left: 1.6rem;
+    align-items: center;
+    display: flex;
+}
+
+.footer-img{
+    max-width: 25%;
+}
+
+/* over styles */
+
+#overmij{
+    padding-block: 6rem;
+    background-color: rgb(109, 109, 109);
+    background-image: url("../images/over-interesse.jpg");
+    background-blend-mode: overlay;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: 445px;
+    background-position: center;
+    background-size: cover;
+}
+
+.overmij-container{
+    display: flex;
+    flex: 0 0 auto;
+    width: 95%;
+    margin-top: 440px;
+}
+
+.overmij-profiel-foto img{
+    width: 200px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.overmij-profiel-titel{
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    margin-left: 20px;
+    color: #fff;
+    font-size: 42px;
+}
+
+#overmij-info{
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: -5;
+}
+
+.overmij-container-info{
+    display: flex;
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.overmij-container-info-left{
+    position: relative;
+    width: 21%;
+    background-color: #413c58;
+    z-index:-1;
+}
+
+.overmij-container-info-right{
+    width: 100%;
+    padding-block: 4rem;
+    padding-left: 8rem;
+    background-color: #fffaf1;
+    padding-right: 8rem;
+}
+
+.overmij-heading-tekst{
+    font-size: 50px;
+    margin-bottom: 3rem;
+    font-weight: 500;
+    text-align: left;
+}
+
+.overmij-inleiding{
+    margin-block:1rem;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: left;
+    font-family: inter;
+}
+
+.overmij-inleiding-img{
+    max-width: 640px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+    margin-top: 25px;
+}
+
+.overmij-inleiding-img-text{
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.overmij-img-flex{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+#overmij-video{
+    padding-block: 2rem;
+    background-color: #e7d6bc;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+}
+
+.overmij-video-container{
+    flex: 0 0 auto;
+    text-align:center;
+    width: 70%;
+}
+
+.overmij-video-title{
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+    margin-top: 3rem;
+}
+
+.overmij-video{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.overmij-video-text{
+    margin-bottom: 1.5rem;
+    font-size: 22px;
+    margin-top: 1.5rem;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.overmij-video-heading-tekst{
+    font-size: 48px;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.overmij-video-subtitle{
+    font-size: 14px;
+    font-style:italic;
+}
+
+.gegevens {
+    padding: 0px;
+    border-radius: 10px;
+    margin-block: 10rem;
+    color: #fff;
+}
+
+.gegevens h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1.4vw;
+}
+    
+.gegevens-item {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.gegevens-item span {
+    margin-left: 10px;
+}
+
+.gegevens-icon{
+    font-size: 1.3em;
+}
+
+/* Projecten Style */
+
+#projecten{
+    padding-block: 6rem;
+    background-color: #fffaf1;
+    justify-content: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 9rem;
+}
+
+.projecten-intro-left-container{
+    flex: 0 0 auto;
+    width: 30%;
+    line-height: 2.1rem;
+}
+
+.projecten-intro-right-container{
+    width: 33%;
+}
+.projecten-img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.projecten-intro-heading-text{
+    font-size: 64px;
+    font-family: serif;
+    margin-top:3rem;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.projecten-intro-text{
+    margin-block: 3rem;
+    font-size: 24px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+#projecten-item-box{
+    padding-block: 1rem;
+    background-color: #e7d6bc;
+    justify-content: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projecten-item-container{
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.projecten-item-container a{
+    text-decoration: none;
+}
+
+.projecten-item{
+    width: 100%;
+    background: #fffaf1;
+    border-radius: 20px;
+    height: 280px;
+    margin-block: 2rem;
+    display: flex;
+    transition: all 0.3s ease-in-out;
+}
+
+.projecten-item:hover{
+    scale: 1.03;    
+}
+
+.projecten-item-img{
+    height: 100%;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.projecten-item-left-box{
+    height: 100%;
+}
+
+.projecten-item-right-box{
+    padding: 1rem;
+    height: 100%;
+}
+
+.projecten-box-heading-text{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: #413c58;
+}
+
+.projecten-box-text{
+    color: #413c58;
+}
+
+/* mobile style */
+@media only screen and (max-width: 1000px) {
+
+/* index style mobile*/
+
+#hero{
+    flex-direction: column;
+    padding-block: 4rem;
+    gap: 4rem;
+}
+
+.hero-container-left,
+.hero-container-right{
+    width: 90%;
+
+}
+
+.hero-container-left{
+    text-align: center;
+}
+
+.hero-heading-tekst{
+    font-size: 64px;
+}
+
+/* kennis style mobile*/
+
+#kennis{
+    padding-block: 4rem;
+    flex-direction: column;
+}
+
+.kennis-inleiding{
+    font-size: 22px;
+}
+
+.kennis-container{
+    width: 90%;
+    text-align: center;
+}
+
+.kennis-button{
+    width: 100%;
+    min-height: 150px;
+    margin-bottom: 20px;
+}
+
+.kennis-buttons-container{
+    display: block;
+}
+
+#kennis-uitleg-container{
+    width: 90%;
+    font-size: 22px;
+    text-align: left;
+}
+
+/* over style mobile*/
+
+#overmij{
+    background-image: url("../images/over-interesse-mobile.jpg");
+    background-size: cover;
+}
+
+.overmij-profiel-foto img{
+    width: 140px;
+}
+
+.overmij-profiel-titel{
+    font-size: 24px;
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.overmij-heading-tekst{
+    font-size: 48px;
+    padding-block: 1rem;
+    text-align: center;
+}
+
+.overmij-inleiding{
+    text-align: left;
+}
+
+.overmij-container-info{
+    padding-block: 0rem;
+    display: block;
+}
+
+.overmij-container-info-left{
+   width: 100%; 
+}
+
+.overmij-container-info-right{
+   width: 100%; 
+   padding-block: 3rem;
+   padding-left: 25px;
+   padding-right: 25px;
+}
+
+#overmij-video{
+    padding-block: 0;
+    padding-bottom: 4rem;
+}
+
+.overmij-video-container{
+    width: 90%;
+}
+
+.overmij-video iframe{
+    height: 300px;
+}
+
+.overmij-video-heading-tekst{
+    font-size: 48px;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.gegevens{
+    margin-block: 0;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+}
+
+.gegevens h2{
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.gegevens-item{
+    font-size: 18px;
+}
+
+/* footer style mobile*/
+
+#footer{
+    padding-block: 2rem;
+}
+
+.footer-container{
+    width: 90%;
+}
+
+.footer-box-left{
+    width: 80%;
+    text-align: right;
+    font-size: 16px;
+}
+
+.footer-box-right{
+    width: 30%
+}
+
+.footer-img{
+    max-width: 100%;
+}
+
+/* projecten style */
+
+#projecten{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding-block: 4rem;
+    width: 90%;
+}
+
+.projecten-intro-left-container{
+    width: 100%;
+}
+
+.projecten-intro-right-container{
+    width: 100%;
+}
+
+.projecten-intro-heading-text{
+    margin-top: 0;
+    text-align: center;
+}
+
+.projecten-intro-text{
+    text-align: center;
+}
+
+.projecten-item{
+    display: flex;
+    height: auto;
+}
+
+.projecten-item-container{
+    width: 90%;
+}
+
+.projecten-item-left-box{
+    border-radius: 20px 20px 0px 0px;
+}
+
+.projecten-box-heading-text{
+    font-size: 17px;
+}
+
+.projecten-box-text{
+    font-size: 13px;
+}
+
+.projecten-item-img{
+    width: 100%;
+}
+
+}

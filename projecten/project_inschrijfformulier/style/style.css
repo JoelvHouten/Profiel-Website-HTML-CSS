@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(160deg, rgba(3, 1, 40, 1) 0%, rgba(68, 47, 122, 1) 50%, rgba(50, 61, 125, 1) 66%, rgba(3, 103, 126, 1) 100%);
+    color: #413c58;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+form h1 {
+    text-align: left;
+    color: #ffffff;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+form {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+fieldset {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 1.5rem !important;
+    padding: 25px 20px 20px 20px !important;
+    font-family: 'Inter', sans-serif;
+}
+
+legend {
+    font-size: 20px;
+    color: #2f2168;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+label {
+    color: #2f2168;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+input.form-control {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.form-check-input[type="radio"] {
+    border: 2px solid #463585;
+    box-shadow: none;
+}
+
+.form-check-input[type="checkbox"] {
+    border: 2px solid #463585;
+    box-shadow: none;
+}
+
+#motivatie-textarea {
+    border: 1px solid #463585;
+    box-shadow: none;
+}
+
+.mb-3 {
+    margin-bottom: 1.5rem !important;
+}
+
+.btn-secondary{
+    background-color: #fff;
+    color: #463585;
+    font-weight: 600;
+    border-radius: 3px;
+    height: 50px;
+    border: 0;
+}
+
+.btn-secondary:hover{
+    background-color: #2d2d2d;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #463585;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 3px;
+    height: 50px;
+    border: 0;
+}
+
+.btn-primary:hover {
+    background-color: #2d2d2d;
+    color: #fff;
+}
+
+.error{
+    margin-top: 7px;
+    color: red;
+    font-size: 0.825rem;
+    font-weight: 300;
+}
